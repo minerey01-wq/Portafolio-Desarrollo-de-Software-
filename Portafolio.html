@@ -1,0 +1,520 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | Desarrollador</title>
+
+    <style>
+
+/* TARJETAS DE PROYECTOS */
+.tarjeta {
+    background: #151e2e;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #263449;
+    display: flex;
+    flex-direction: column;
+}
+
+/* MARCO DE IMAGEN */
+.imagen-proyecto {
+    width: 100%;
+    height: 180px;
+    border: 2px solid #38bdf8;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 22px;
+    background: #0b0f19;
+}
+
+.imagen-proyecto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* TITULO */
+.tarjeta h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+    font-size: 21px;
+}
+
+/* DESCRIPCION */
+.descripcion-proyecto {
+    color: #cbd5e1;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+/* SEPARADOR */
+.separador-proyecto {
+    border: none;
+    border-top: 1px solid #334155;
+    margin-bottom: 18px;
+}
+
+/* TECNOLOGIAS */
+.tecnologias-proyecto {
+    margin-bottom: 20px;
+}
+
+.tecnologias-proyecto b {
+    display: block;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.tecnologias-proyecto .etiqueta {
+    margin: 3px 4px 3px 0;
+}
+
+/* BOTON */
+.tarjeta .boton {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0f19;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111827;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 75px 10%;
+        }
+
+        .inicio {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .inicio img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #38bdf8;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #38bdf8;
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 25px;
+        }
+
+        .tarjetas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .tarjeta {
+            background: #151e2e;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #263449;
+        }
+
+        .tarjeta h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .etiqueta {
+            display: inline-block;
+            background: #1e3a50;
+            color: #7dd3fc;
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 13px;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 7px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .boton:hover {
+            background: #0369a1;
+        }
+
+        footer {
+            background: #111827;
+            padding: 25px;
+            text-align: center;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 13px;
+            }
+
+            .inicio {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Portafolio Desarrollo de Software</h2>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#estudios">Estudios</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<!-- PRESENTACIÓN -->
+<section class="inicio" id="inicio">
+
+    <img src="img/Foto.png" alt="Mi fotografía">
+
+    <div>
+        <h1>Hola, soy Reyli</h1>
+
+        <h3>Desarrollador de Software</h3>
+
+        <p>
+            Soy estudiante de desarrollo de software,
+            interesado en la programación, diseño y
+            creación de aplicaciones y videojuegos.
+        </p>
+
+        <a class="boton" href="#proyectos">
+            Ver mis proyectos
+        </a>
+    </div>
+
+</section>
+
+
+<!-- SOBRE MI -->
+<section id="sobre-mi">
+
+    <h2>Sobre mí</h2>
+
+    <p>
+        Soy una persona apasionada por la tecnología, el diseño
+        y el desarrollo de proyectos digitales. Me interesa
+        transformar ideas en experiencias interactivas mediante
+        la creación de aplicaciones, interfaces y contenido visual.
+
+        <br><br>
+
+        Además del desarrollo de software, tengo un gran interés
+        por el modelado 3D, el diseño de personajes y la creación
+        de videojuegos. Mi objetivo a futuro es consolidar mi
+        propio estudio independiente de desarrollo de videojuegos:
+        <b>SVR STUDIOS</b>, donde pueda desarrollar proyectos
+        originales y dar vida a nuevas ideas.
+    </p>
+
+    <br>
+
+    <div class="tarjetas">
+
+        <div class="tarjeta">
+            <h3>Información personal</h3>
+            <p><b>Edad:</b> 21 años</p>
+            <p><b>Ubicación:</b> Ciudad Nicolás Romero, México</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Contacto</h3>
+            <p><b>Personal:</b></p>
+            <p>mineyli431@gmail.com</p>
+
+            <br>
+
+            <p><b>SVR STUDIOS:</b></p>
+            <p>svrstudiosgames@gmail.com</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Objetivos</h3>
+            <p>
+                Desarrollar proyectos creativos, ampliar mis
+                conocimientos tecnológicos y construir un estudio
+                independiente enfocado en la creación de videojuegos.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ESTUDIOS -->
+<section id="estudios">
+
+    <h2>Formación académica</h2>
+
+    <div class="tarjetas">
+
+                <div class="tarjeta">
+            <h3>CECYTEM Plantel Nicolás Romero I</h3>
+            <p>Soporte y Mantenimiento de equipos de computo</p>
+            <p>2020 - 2023</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Universidad Tecnológica Fidel Velázquez</h3>
+            <p>Tec. Superior en Desarrollo de Software Multiplataforma</p>
+            <p>2023 - 2025</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Universidad Tecnológica Fidel Velázquez</h3>
+            <p>Ing. En Desarrollo y Gestion de Software</p>
+            <p>2025 - Actualidad</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- HABILIDADES -->
+<section id="habilidades">
+
+    <h2>Tecnologías y habilidades</h2>
+
+    <div class="tarjetas">
+
+        <div class="tarjeta">
+            <h3>Lenguajes de programación</h3>
+            <span class="etiqueta">HTML</span>
+            <span class="etiqueta">CSS</span>
+            <span class="etiqueta">JavaScript</span>
+            <span class="etiqueta">Python</span>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Bases de datos</h3>
+            <span class="etiqueta">MySQL</span>
+            <span class="etiqueta">SQL Server</span>
+            <span class="etiqueta">MongoDB</span>
+        </div>
+
+        <div class="tarjeta">
+    <h3>Software de Diseño</h3>
+    <span class="etiqueta">Blender</span>
+    <span class="etiqueta">Ibis Paint</span>
+    <span class="etiqueta">Canva</span>
+    <span class="etiqueta">Word</span>
+    <span class="etiqueta">Canva</span>
+</div>
+
+        <div class="tarjeta">
+            <h3>Plataformas y herramientas</h3>
+            <span class="etiqueta">GitHub</span>
+            <span class="etiqueta">Visual Studio Code</span>
+            <span class="etiqueta">Phyton</span>
+            <span class="etiqueta">Android Studio</span>
+            <span class="etiqueta">Godot</span>
+            <span class="etiqueta">Excel</span>
+            
+            
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROYECTOS -->
+<section id="proyectos">
+
+    <h2>Mis proyectos</h2>
+
+    <div class="tarjetas">
+
+        <!-- PROYECTO 1 -->
+        <div class="tarjeta">
+
+            <div class="imagen-proyecto">
+                <img src="img/Proyecto1.png" alt="Página Web">
+            </div>
+
+            <h3>SAN FIERRO FITS</h3>
+
+            <p class="descripcion-proyecto">
+                Mi primer proyecto en la creacion y diseño de una pagina web intengrando HTML, Css y JScript. En este caso una pagina de ropa con el nombre ficticio de "San Fierro FITS"
+                
+            </p>
+
+            <hr class="separador-proyecto">
+
+            <div class="tecnologias-proyecto">
+                <b>Tecnologías utilizadas:</b>
+                <span class="etiqueta">Visual Studio Code</span>
+                <span class="etiqueta">HTML</span>
+                <span class="etiqueta">CSS</span>
+                <span class="etiqueta">JavaScript</span>
+            </div>
+
+            <a class="boton" href="https://drive.google.com/file/d/10CgCshb_ZZQfo9Ebht7sPx-pPGMd_tWH/view?usp=sharing"
+               target="_blank">Ver proyecto</a>
+
+        </div>
+
+
+        <!-- PROYECTO 2 -->
+        <div class="tarjeta">
+
+            <div class="imagen-proyecto">
+                <img src="img/Proyecto2.png" alt="Cafe Dragon">
+            </div>
+
+            <h3>Cafe Dragon</h3>
+
+            <p class="descripcion-proyecto">
+                Aplicacion movil enfocada en la institucion "UTFV" que esta destinada a ser un servicio de comida similar a Uber y rappi. Esta ambientada en un entorno academico para facilitar la compra de los productos de la cafeteria de las instalaciones.
+            </p>
+
+            <hr class="separador-proyecto">
+
+            <div class="tecnologias-proyecto">
+                <b>Tecnologías utilizadas:</b>
+                <span class="etiqueta">Android Studio</span>
+                <span class="etiqueta">Canva</span>
+                <span class="etiqueta">Ibis Paint</span>
+                <span class="etiqueta">Paint</span>
+            </div>
+
+            <a class="boton"
+               href="https://www.mediafire.com/file/o0p9mcbbwrys7b5/CafeDragon_3.5.apk/file"
+               target="_blank">Ver proyecto</a>
+
+        </div>
+
+
+        <!-- PROYECTO 3 -->
+        <div class="tarjeta">
+
+            <div class="imagen-proyecto">
+                <img src="img/Proyecto3.png" alt="FNAWS Videojuego">
+            </div>
+
+            <h3>FNAWS (Videojuego)</h3>
+
+            <p class="descripcion-proyecto">
+                Como proyecto escolar desarrollé en conjunto
+                un videojuego inspirado en la saga Five Nights
+                at Freddy's. 
+                
+                A su vez, inauguré mi propio estudio
+                de desarrollo de videojuegos indie llamado
+                SVR Studios Games.
+            </p>
+
+            <hr class="separador-proyecto">
+
+            <div class="tecnologias-proyecto">
+                <b>Tecnologías utilizadas:</b>
+                <span class="etiqueta">Blender</span>
+                <span class="etiqueta">Godot</span>
+            </div>
+
+            <a class="boton"
+               href="https://gamejolt.com/games/FNAWs/1120212"
+               target="_blank">Ver proyecto</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACTO -->
+<section id="contacto">
+
+    <h2>Contacto</h2>
+
+    <p><b>Correo:</b> mineyli431@gmail.com</p>
+
+    <p>
+        <b>GitHub:</b>
+        <a href="https://github.com/minerey01-wq" target="_blank">
+            Mi perfil de GitHub
+        </a>
+    </p>
+
+</section>
+
+<footer>
+    <p>© 2026 Reyli Missael - Portafolio de Desarrollador de Software</p>
+</footer>
+
+</body>
+</html>
